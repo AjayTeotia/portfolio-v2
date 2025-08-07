@@ -30,7 +30,7 @@ export function Stats() {
               <p
                 className={`${
                   item.text.length < 15 ? "max-w-[100px]" : "max-w-[150px]"
-                } leading-snug text-white/80`}
+                } leading-snug text-muted-foreground`}
               >
                 {item.text}
               </p>

@@ -18,7 +18,7 @@ export function Header() {
   return (
     <header
       className={cn(
-        "sticky top-0 z-10 py-8 xl:py-12 rounded-b-2xl p-4 bg-transparent left-0 right-0 transition-all duration-200 border-b border-transparent",
+        "sticky top-0 z-50 py-8 xl:py-12 rounded-b-2xl p-4 bg-transparent left-0 right-0 transition-all duration-200 border-b border-transparent",
         isScrolled && "bg-background border-border"
       )}
     >
