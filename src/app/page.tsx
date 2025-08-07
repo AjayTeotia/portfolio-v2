@@ -44,7 +44,7 @@ export default function Home() {
               initial="hidden"
               whileInView={"show"}
               viewport={{ once: false, amount: 0.2 }}
-              className="p text-muted-foreground"
+              className="p font-semibold text-muted-foreground"
             >
               <p>
                 A dedicated full stack developer delivering impactful web

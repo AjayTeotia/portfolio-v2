@@ -16,7 +16,6 @@ export function Photo() {
         <Image
           src="/me.jpg"
           alt="Ajay's profile photo"
-          priority
           quality={100}
           sizes="(max-width: 600px) 100vw, (max-width: 1200px) 50vw, 400px"
           className="object-contain rounded-full"

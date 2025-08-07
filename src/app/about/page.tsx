@@ -50,7 +50,7 @@ export default function AboutPage() {
                   <h3 className="text-3xl xl:text-4xl font-bold">
                     {AboutMe[0].title}
                   </h3>
-                  <p className="mt-2 text-muted-foreground">
+                  <p className="mt-2 font-semibold text-muted-foreground">
                     {AboutMe[0].description}
                   </p>
                 </div>
@@ -81,7 +81,7 @@ export default function AboutPage() {
                   <h3 className="text-3xl xl:text-4xl font-bold">
                     {Education[0].title}
                   </h3>
-                  <p className="mt-2 text-muted-foreground">
+                  <p className="mt-2 font-semibold text-muted-foreground">
                     {Education[0].description}
                   </p>
                 </div>
@@ -118,7 +118,7 @@ export default function AboutPage() {
                   <h3 className="text-3xl xl:text-4xl font-bold">
                     {Skills[0].title}
                   </h3>
-                  <p className="mt-2 text-muted-foreground">
+                  <p className="mt-2 font-semibold text-muted-foreground">
                     {Skills[0].description}
                   </p>
                 </div>

@@ -25,12 +25,12 @@ export function Stats() {
                 duration={5}
                 delay={2}
                 formattingFn={formatNumber}
-                className="text-4xl xl:text-6xl font-extrabold"
+                className="text-4xl xl:text-6xl text-primary font-extrabold"
               />
               <p
                 className={`${
                   item.text.length < 15 ? "max-w-[100px]" : "max-w-[150px]"
-                } leading-snug text-muted-foreground`}
+                } leading-snug text-xl font-semibold text-muted-foreground`}
               >
                 {item.text}
               </p>
