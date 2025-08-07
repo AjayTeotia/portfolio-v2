@@ -3,6 +3,7 @@ import { JetBrains_Mono, Roboto } from "next/font/google";
 import "./globals.css";
 import { PageTransition } from "@/components/page-transition";
 import { ThemeProvider } from "@/components/theme/theme-provider";
+import { Header } from "@/components/header";
 
 const jetbrainsMono = JetBrains_Mono({
   subsets: ["latin"],
@@ -39,6 +40,8 @@ export default function RootLayout({
           disableTransitionOnChange
         >
           <PageTransition>
+            <Header />
+
             <div className="fixed inset-0 -z-10 w-screen h-screen bg-[radial-gradient(#dadde2_1px,transparent_1px)] dark:bg-[radial-gradient(#393e4a_1px,transparent_1px)] [background-size:16px_16px]" />
 
             {children}
