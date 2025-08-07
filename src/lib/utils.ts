@@ -1,6 +1,34 @@
-import { clsx, type ClassValue } from "clsx"
-import { twMerge } from "tailwind-merge"
+import { clsx, type ClassValue } from "clsx";
+import { twMerge } from "tailwind-merge";
+import type { Variants } from "framer-motion";
 
 export function cn(...inputs: ClassValue[]) {
-  return twMerge(clsx(inputs))
+  return twMerge(clsx(inputs));
+}
+
+export function fadeIn(direction: string, delay: number): Variants {
+  return {
+    hidden: {
+      y: direction === "up" ? 40 : direction === "down" ? -40 : 0,
+      opacity: 0,
+      x: direction === "left" ? 40 : direction === "right" ? -40 : 0,
+      transition: {
+        type: "tween",
+        duration: 1.4,
+        delay: delay,
+        ease: [0.25, 0.6, 0.3, 0.8],
+      },
+    },
+    show: {
+      y: 0,
+      x: 0,
+      opacity: 1,
+      transition: {
+        type: "tween",
+        duration: 1.2,
+        delay: delay,
+        ease: [0.25, 0.25, 0.25, 0.75],
+      },
+    },
+  };
 }
