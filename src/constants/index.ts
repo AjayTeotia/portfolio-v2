@@ -2,6 +2,7 @@ import {
   AboutMeTypes,
   EducationTypes,
   NavLink,
+  ProjectsTypes,
   SkillsTypes,
   SocialLinksTypes,
   StatsDataType,
@@ -165,5 +166,106 @@ export const Skills: SkillsTypes[] = [
         name: "Clerk",
       },
     ],
+  },
+];
+
+export const ProjectsData: ProjectsTypes[] = [
+  {
+    title: "LMS - Learning Management System",
+    category: "Web Application",
+    description:
+      "A full-stack course platform built with the modern web. After weeks of building, I’m excited to launch LMS – a production-ready, open-source Learning Management System with everything you need to run an online education platform",
+    stacks: [
+      { name: "Next.js" },
+      { name: "React" },
+      { name: "Tailwind CSS" },
+      { name: "Better-Auth" },
+      { name: "Prisma" },
+    ],
+    image: "/projects/lms.jpeg",
+    liveLink: "https://lms-aj.vercel.app/",
+    githubLink: "https://github.com/AjayTeotia/lms",
+  },
+
+  {
+    title: "Vibe",
+    category: "Web Application",
+    description:
+      "Vibe is an AI-powered web application generator that transforms your ideas into fully functional, live web apps through simple text prompts. Built with Next.js 15, it leverages cutting-edge AI to create, preview, and share web applications in real-time",
+    stacks: [
+      { name: "Next.js" },
+      { name: "React" },
+      { name: "Tailwind CSS" },
+      { name: "Prisma" },
+      { name: "tRPC" },
+    ],
+    image: "/projects/vibe.jpeg",
+    liveLink: "https://vibe-gilt.vercel.app/",
+    githubLink: "https://github.com/AjayTeotia/vibe",
+  },
+
+  {
+    title: "Quill",
+    category: "Web Application",
+    description:
+      "A Modern Fullstack SaaS-Platform.Built with the Next.js, tRPC, TypeScript, Prisma & Tailwind",
+    stacks: [
+      { name: "Next.js" },
+      { name: "React" },
+      { name: "Tailwind CSS" },
+      { name: "Prisma" },
+      { name: "tRPC" },
+    ],
+    image: "/projects/quill.jpeg",
+    liveLink: "https://quill-gilt.vercel.app/",
+    githubLink: "https://github.com/AjayTeotia/quill",
+  },
+
+  {
+    title: "PingPanda",
+    category: "Web Application",
+    description: "A Modern Fullstack Event Monitoring SaaS",
+    stacks: [
+      { name: "Next.js" },
+      { name: "React" },
+      { name: "Tailwind CSS" },
+      { name: "Prisma" },
+      { name: "tRPC" },
+    ],
+    image: "/projects/pingpanda.jpeg",
+    liveLink: "https://pingpanda-aj.vercel.app/",
+    githubLink: "https://github.com/AjayTeotia/PingPanda",
+  },
+
+  {
+    title: "MovieFlix",
+    category: "Mobile Application",
+    description: "A Movie Finding App with Extensive Search.",
+    stacks: [
+      { name: "Expo" },
+      { name: "React Native" },
+      { name: "Appwrite" },
+      { name: "TypeScript" },
+      { name: "Tailwind CSS" },
+    ],
+    image: "/projects/movieflix.jpeg",
+    liveLink: "",
+    githubLink: "https://github.com/AjayTeotia/MovieFlix",
+  },
+
+  {
+    title: "Streamify",
+    category: "MERN Application",
+    description: "Fullstack Chat & Video Calling App.",
+    stacks: [
+      { name: "MongoDB" },
+      { name: "React" },
+      { name: "Node.js" },
+      { name: "Express.js" },
+      { name: "Stream" },
+    ],
+    image: "/projects/stramify.jpeg",
+    liveLink: "https://streamify-5qrf.onrender.com/",
+    githubLink: "https://github.com/AjayTeotia/streamify",
   },
 ];

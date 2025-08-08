@@ -41,3 +41,17 @@ export type SkillsTypes = {
     name: string;
   }[];
 };
+
+export interface StackType {
+  name: string;
+}
+
+export interface ProjectsTypes {
+  title: string;
+  category: string;
+  description: string;
+  stacks: StackType[];
+  image: string;
+  liveLink: string;
+  githubLink: string;
+}
