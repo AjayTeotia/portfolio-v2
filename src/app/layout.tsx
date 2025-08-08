@@ -5,6 +5,8 @@ import { PageTransition } from "@/components/page-transition";
 import { ThemeProvider } from "@/components/theme/theme-provider";
 import { Header } from "@/components/header";
 import { Toaster } from "sonner";
+import { Analytics } from "@vercel/analytics/next";
+import { SpeedInsights } from "@vercel/speed-insights/next";
 
 const jetbrainsMono = JetBrains_Mono({
   subsets: ["latin"],
@@ -50,6 +52,9 @@ export default function RootLayout({
             <Toaster position="bottom-center" richColors closeButton />
           </PageTransition>
         </ThemeProvider>
+
+        <Analytics />
+        <SpeedInsights />
       </body>
     </html>
   );
