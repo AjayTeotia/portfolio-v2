@@ -59,7 +59,7 @@ export default function AboutPage() {
                     {AboutMe[0].info.map((item, index) => (
                       <li
                         key={index}
-                        className="bg-muted py-5 px-6 rounded-xl flex flex-col items-center md:items-start"
+                        className="bg-background border py-5 px-6 rounded-xl flex flex-col items-center md:items-start"
                       >
                         <span className="uppercase text-xs tracking-wide text-accent-foreground font-semibold">
                           {item.field_name}
@@ -85,12 +85,12 @@ export default function AboutPage() {
                     {Education[0].description}
                   </p>
                 </div>
-                <ScrollArea className="max-h-[350px] sm:max-h-[400px]">
+                <ScrollArea className="max-h-[350px] sm:max-h-[400px] ">
                   <ul className="grid grid-cols-1 md:grid-cols-2 gap-4">
                     {Education[0].item.map((item, index) => (
                       <li
                         key={index}
-                        className="bg-muted py-5 px-6 rounded-xl flex flex-col items-center md:items-start h-auto"
+                        className="bg-background border py-5 px-6 rounded-xl flex flex-col items-center md:items-start h-auto"
                       >
                         <span className="text-primary font-semibold text-sm">
                           {item.duration}
@@ -99,7 +99,7 @@ export default function AboutPage() {
                           {item.degree}
                         </h3>
                         <div className="flex items-center mt-2 gap-2">
-                          <span className="w-1.5 h-1.5 rounded-full bg-secondary-foreground"></span>
+                          <span className="size-1.5 rounded-full bg-primary" />
                           <p className="text-muted-foreground text-sm">
                             {item.institution}
                           </p>
@@ -128,13 +128,17 @@ export default function AboutPage() {
                       <li key={index}>
                         <TooltipProvider delayDuration={100}>
                           <Tooltip>
-                            <TooltipTrigger className="w-full h-[90px] sm:h-[110px] xl:h-[150px] bg-muted rounded-xl flex flex-col justify-center items-center cursor-pointer transition-all outline-none">
+                            <TooltipTrigger className="w-full h-[90px] sm:h-[110px] xl:h-[150px] hover:text-primary bg-background border rounded-xl flex flex-col justify-center items-center cursor-pointer transition-all outline-none">
                               <span className="text-3xl xl:text-7xl transition-all">
                                 {<item.icon />}
                               </span>
-                              <span className="text-xs sm:text-sm xl:hidden mt-2 text-muted-foreground">
-                                {item.name}
-                              </span>
+
+                              <div className="flex items-center justify-center mt-2 gap-2">
+                                <span className="size-1.5 rounded-full bg-primary" />
+                                <span className="text-xs sm:text-sm text-muted-foreground">
+                                  {item.name}
+                                </span>
+                              </div>
                             </TooltipTrigger>
                             <TooltipContent
                               side="top"

@@ -15,6 +15,7 @@ export function Photo() {
       >
         <Image
           src="/me.jpg"
+          priority
           alt="Ajay's profile photo"
           quality={100}
           sizes="(max-width: 600px) 100vw, (max-width: 1200px) 50vw, 400px"

@@ -40,7 +40,7 @@ export default function Projects() {
                 />
               </div>
 
-              <div className="absolute bottom-0 left-0 right-0 p-4 bg-secondary-foreground text-accent-foreground opacity-0 group-hover:opacity-100 transition-opacity duration-300">
+              <div className="absolute bottom-0 left-0 right-0 p-4 bg-background text-accent-foreground opacity-0 group-hover:opacity-100 transition-opacity duration-300">
                 <h3 className="font-bold text-lg">{item.title}</h3>
                 <p className="text-xs mt-2 text-muted-foreground">
                   {item.description}
