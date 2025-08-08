@@ -55,3 +55,10 @@ export interface ProjectsTypes {
   liveLink: string;
   githubLink: string;
 }
+
+export type ContactInfoType = {
+  icon: LucideIcon;
+  title: string;
+  description: string;
+  action: () => void;
+};

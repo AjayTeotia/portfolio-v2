@@ -1,5 +1,6 @@
 import {
   AboutMeTypes,
+  ContactInfoType,
   EducationTypes,
   NavLink,
   ProjectsTypes,
@@ -7,7 +8,13 @@ import {
   SocialLinksTypes,
   StatsDataType,
 } from "@/types";
-import { GithubIcon, LinkedinIcon } from "lucide-react";
+import {
+  GithubIcon,
+  LinkedinIcon,
+  MailIcon,
+  MapPinIcon,
+  PhoneCall,
+} from "lucide-react";
 import { FaReact } from "react-icons/fa";
 import { RiNextjsFill } from "react-icons/ri";
 import { BiLogoTailwindCss } from "react-icons/bi";
@@ -267,5 +274,36 @@ export const ProjectsData: ProjectsTypes[] = [
     image: "/projects/stramify.jpeg",
     liveLink: "https://streamify-5qrf.onrender.com/",
     githubLink: "https://github.com/AjayTeotia/streamify",
+  },
+];
+
+export const ContactInfo: ContactInfoType[] = [
+  {
+    icon: PhoneCall,
+    title: "Phone",
+    description: "(+91) 639 584 9909",
+    action: () => {
+      window.location.href = "tel:+916395849909";
+    },
+  },
+
+  {
+    icon: MailIcon,
+    title: "Email",
+    description: "ajaysinghteotia3@gmail.com",
+    action: () => {
+      window.location.href = "mailto:ajaysinghteotia3@gmail.com";
+    },
+  },
+
+  {
+    icon: MapPinIcon,
+    title: "Location",
+    description: "Gulaothi, India",
+    action: () =>
+      window.open(
+        "https://www.google.com/maps/place/Gulaothi,+Uttar+Pradesh+203408/@28.5874327,77.7697288,15z/data=!3m1!4b1!4m6!3m5!1s0x390c9982107812d3:0x893238d0cc3ea721!8m2!3d28.5902291!4d77.7936081!16zL20vMGY0eTBq?entry=ttu&g_ep=EgoyMDI1MDgwNS4wIKXMDSoASAFQAw%3D%3D",
+        "_blank"
+      ),
   },
 ];
